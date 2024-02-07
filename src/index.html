@@ -1,17 +1,74 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/assets/images/vite.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/base/normalize.css" />
-		<link rel="stylesheet" href="css/base/base.css" />
-		<link rel="stylesheet" href="css/styles.css" />
-		<title>Vite App</title>
-	</head>
-	<body>
-		<h1>WEB WITH VITE</h1>
-		<!-- <img src="./assets/images/cute-cat.webp" alt="" /> -->
-		<script type="module" src="./js/index.js"></script>
-	</body>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORDLE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    
+  </head>
+  <body>
+    <main class="main-container">
+      <h1 class="title">WORDLE</h1>
+      <div id="game-table" class="game-container"></div>
+      <input id="input" class="input" type="text" placeholder="Type word..." />
+    </main>
+    <div id="gameover" class="gameover-card hidden">
+      <h2 class="gameover-title">YOU WIN</h2>
+      <button id="newgame" class="newgame-button">NEW GAME</button>
+    </div>
+    <section class="keyboard">
+      <div id="keyboard" class="keyboard-container">
+        <div class="keyboard-row">
+          <span class="keyboard-letter">Q</span>
+          <span class="keyboard-letter">W</span>
+          <span class="keyboard-letter">E</span>
+          <span class="keyboard-letter">R</span>
+          <span class="keyboard-letter">T</span>
+          <span class="keyboard-letter">Y</span>
+          <span class="keyboard-letter">U</span>
+          <span class="keyboard-letter">I</span>
+          <span class="keyboard-letter">O</span>
+          <span class="keyboard-letter">P</span>
+        </div>
+        <div class="keyboard-row">
+          <span class="keyboard-letter">A</span>
+          <span class="keyboard-letter">S</span>
+          <span class="keyboard-letter">D</span>
+          <span class="keyboard-letter">F</span>
+          <span class="keyboard-letter">G</span>
+          <span class="keyboard-letter">H</span>
+          <span class="keyboard-letter">J</span>
+          <span class="keyboard-letter">K</span>
+          <span class="keyboard-letter">L</span>
+          <span class="keyboard-letter">Ñ</span>
+        </div>
+        <div class="keyboard-row">
+          <span class="material-symbols-outlined icon">done</span>
+          <span class="keyboard-letter">Z</span>
+          <span class="keyboard-letter">X</span>
+          <span class="keyboard-letter">C</span>
+          <span class="keyboard-letter">V</span>
+          <span class="keyboard-letter">B</span>
+          <span class="keyboard-letter">N</span>
+          <span class="keyboard-letter">M</span>
+          <span class="material-symbols-outlined icon">backspace</span>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
 </html>
